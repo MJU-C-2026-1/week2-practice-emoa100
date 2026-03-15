@@ -3,7 +3,7 @@
   작 성 자:
 */
 
-#include <studio.h>
+#include <stdio.h>
 
 int main()
 {
