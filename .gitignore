@@ -1,0 +1,20 @@
+# 컴파일 실행 파일 및 목적 파일
+*.exe
+*.o
+*.out
+*.app
+
+# Dev C++ 전용 임시 파일
+*.layout
+*.win
+[Dd]ebug/
+[Rr]elease/
+
+# VS Code 및 Codespaces 관련
+.vscode/
+.history/
+*.log
+
+# 운영체제 임시 파일
+.DS_Store
+Thumbs.db

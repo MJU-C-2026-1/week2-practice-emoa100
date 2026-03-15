@@ -1,0 +1,26 @@
+{
+  "name": "C Language 실습 환경",
+  // C언어 컴파일러(gcc 등)가 미리 설치된 이미지 사용
+  "image": "mcr.microsoft.com/devcontainers/cpp:0-debian-11",
+
+  "customizations": {
+    "vscode": {
+      // 1. 필수 익스텐션 자동 설치 (여러 번 설치할 필요 없음)
+      "extensions": [
+        "ms-vscode.cpptools",
+        "ms-vscode.cpptools-extension-pack"
+      ],
+      // 2. '주요 완성 기능 차단' 세팅
+      "settings": {
+        "editor.quickSuggestions": { "other": "off", "comments": "off", "strings": "off" },
+        "editor.suggestOnTriggerCharacters": false,
+        "editor.parameterHints.enabled": false,
+        "editor.wordBasedSuggestions": "off",
+        "editor.snippetSuggestions": "none",
+        "editor.acceptSuggestionOnEnter": "off",
+        // 추가: C언어 전용 인텔리센스도 약화 (선택 사항)
+        "C_Cpp.intelliSenseEngine": "disabled" 
+      }
+    }
+  }
+}
